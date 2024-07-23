@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../App.css';
 
 function Drink() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -94,7 +95,7 @@ function Drink() {
                                 value={searchTerm}
                                 onChange={handleChange}
                             />
-                            <Button variant="primary" type="submit">Search</Button>
+                            <Button variant="success" type="submit" className='mx-2 button-search'>Search</Button>
                         </form>
                     </div>
                 </Row>
